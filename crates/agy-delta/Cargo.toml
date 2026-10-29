@@ -1,0 +1,21 @@
+[package]
+name = "agy-delta"
+description = "Delta CLI integration plugin for Antigravity CLI (Hooks + MCP Server + CLI)"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[[bin]]
+name = "agy-delta"
+path = "src/main.rs"
+
+[dependencies]
+delta-core.workspace = true
+anyhow.workspace = true
+clap.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true

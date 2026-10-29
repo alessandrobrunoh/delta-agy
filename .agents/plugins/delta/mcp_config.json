@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "delta": {
+      "command": "/Users/tacosalfornoh/Coding/Zed/AntigravityDelta/.agents/plugins/delta/bin/agy-delta",
+      "args": ["mcp"]
+    }
+  }
+}

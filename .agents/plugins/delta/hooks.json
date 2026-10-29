@@ -1,0 +1,57 @@
+{
+  "delta-session": {
+    "enabled": true,
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "./bin/agy-delta hook session-start",
+        "timeout": 15
+      }
+    ],
+    "PreInvocation": [
+      {
+        "type": "command",
+        "command": "./bin/agy-delta hook pre-invocation",
+        "timeout": 15
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./bin/agy-delta hook pre-tool-use",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "./bin/agy-delta hook post-tool-use",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PostInvocation": [
+      {
+        "type": "command",
+        "command": "./bin/agy-delta hook post-invocation",
+        "timeout": 15
+      }
+    ],
+    "Stop": [
+      {
+        "type": "command",
+        "command": "./bin/agy-delta hook stop",
+        "timeout": 15
+      }
+    ]
+  }
+}

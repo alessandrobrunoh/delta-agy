@@ -1,0 +1,9 @@
+# Build artifacts
+/target
+**/.DS_Store
+
+# Built plugin binary (built during install / setup)
+/.agents/plugins/delta/bin/
+
+# Local plans & scratch
+/.agents/plans/
